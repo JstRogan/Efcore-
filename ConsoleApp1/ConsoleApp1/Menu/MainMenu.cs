@@ -1,4 +1,4 @@
-﻿using ConsoleApp1;
+using ConsoleApp1;
 using ConsoleApp1.Data;
 using ConsoleApp1.Manipulation;
 using Manipulation;
@@ -20,11 +20,7 @@ public class MainMenu
             Console.WriteLine("2 - Войти как Пользователь"); 
             Console.WriteLine("3 - Выйти из программы");
             
-            if (!int.TryParse(Console.ReadLine(), out int choice)) 
-            { 
-                Console.WriteLine("Некорректный ввод!"); 
-                continue;
-            }
+            int choice = Convert.ToInt32(Console.ReadLine());
             
             switch (choice) 
             { 
@@ -51,11 +47,8 @@ public class MainMenu
             Console.WriteLine("4 - Показать все игры"); 
             Console.WriteLine("5 - Выйти");
             
-            if (!int.TryParse(Console.ReadLine(), out int choice)) 
-            { 
-                Console.WriteLine("Некорректный ввод!"); 
-                continue;
-            }
+            int choice = Convert.ToInt32(Console.ReadLine());
+
             
             switch (choice) 
             { 
@@ -90,11 +83,7 @@ public class MainMenu
             Console.WriteLine("2 - Войти"); 
             Console.WriteLine("3 - Назад");
             
-            if (!int.TryParse(Console.ReadLine(), out int choice)) 
-            {
-                Console.WriteLine("Некорректный ввод!"); 
-                continue;
-            }
+            int choice = Convert.ToInt32(Console.ReadLine());
 
             switch (choice) 
             { 
@@ -134,11 +123,7 @@ public class MainMenu
             Console.WriteLine("4 - История покупок"); 
             Console.WriteLine("5 - Выйти");
             
-            if (!int.TryParse(Console.ReadLine(), out int choice)) 
-            { 
-                Console.WriteLine("Некорректный ввод!"); 
-                continue;
-            }
+            int choice = Convert.ToInt32(Console.ReadLine());
             
             switch (choice) 
             { 
@@ -163,4 +148,3 @@ public class MainMenu
         }
     }
 }
-
